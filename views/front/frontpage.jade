@@ -1,0 +1,13 @@
+extends ../templates/viewTemplate
+block content
+  div#posLogin
+    form#loginForm(method="GET" action="/api/login")
+      table
+        tr
+          td
+            p Username:
+          td
+            input.inputField(name="username" type="text" placeholder="Username123")
+            br
+      div#posLoginButt
+        input#loginButt(name="submit" type="submit")

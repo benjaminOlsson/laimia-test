@@ -1,0 +1,21 @@
+extends ../templates/viewTemplate
+block content
+  div#map
+    div#tempMap
+      h1#tempMapText Moving the satellites to your position...
+      p#tempMapP.
+        (If you don't have enabled the location in your browser.
+        Please enable it and refresh the page)
+  div#leftSide
+    table
+      tr
+        td
+          button#allPlaces.changeView All Places
+        td
+          button#favPlaces.changeView Favorites
+        td
+          button#settings.changeView Settings
+    div#places
+  script var userName = !{JSON.stringify(user)};
+  script(type="text/javascript" src="/javascript/loggedFront.js")
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA40dtI-UxZUhTpMYv8eM1FYsOgaEEW_Y&callback=initMap" async defer)

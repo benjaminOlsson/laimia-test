@@ -1,0 +1,27 @@
+{
+  "name": "locateit",
+  "version": "1.0.0",
+  "description": "An app for locatiing places for the users",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "locate",
+    "find",
+    "nodejs",
+    "express",
+    "jade",
+    "mongodb"
+  ],
+  "author": "Benjamin Olsson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "moment": "^2.20.1",
+    "mongodb": "^2.2.33"
+  }
+}
